@@ -65,3 +65,37 @@ button.login-button:hover,
 button.register-button:hover {
     background-color: #ff7f00;
 }
+
+button.switch-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #ffa500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.switch-button:hover {
+    background-color: #ffa500;
+    color: #fff;
+}
+button.verify-button {
+    display: none; /* Initially hide the verification button */
+    width: 100%;
+    padding: 20px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button.verify-button:hover {
+    background-color: #ff7f00;
+}
+

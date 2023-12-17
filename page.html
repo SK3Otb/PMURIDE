@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile App Login</title>
+    <title>PMURIDE</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="logo"></div>
-        <div id="loginForm" style="display: none;">
+        <div id="loginForm">
             <input type="text" id="username" placeholder="Username">
             <input type="password" id="password" placeholder="Password">
         </div>
@@ -19,9 +19,13 @@
             <input type="text" id="userId" placeholder="User ID">
             <input type="password" id="registerPassword" placeholder="Password">
         </div>
-        <button class="login-button" onclick="toggleForm('loginForm')">Login</button>
-        <button class="register-button" onclick="toggleForm('registerForm')">Register</button>
-    </div>
+        <div id="verificationForm" style="display: none;">
+            <input type="text" id="verificationCode" placeholder="Verification Code">
+        </div>
+        <button class="login-button" onclick="login()">Login</button>
+        <button class="register-button" onclick="register()" style="display: none;">Register</button>
+        <button class="switch-button" onclick="toggleForm()">Switch to Register</button>
+        <button class="verify-button" onclick="verify()" style="display: none;">Verify</button>
     </div>
     <script src="script.js"></script>
 </body>
